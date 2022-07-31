@@ -1,0 +1,6 @@
+vh measurement is viewport height.
+
+Display flex style will stack the list to be appear in horizontal view.
+Now if we do display flex it'll set our content on horizontal way but it'll not be arranged in a distant way by default.
+
+Now in order to specify the content positon to set up either in left and right side, we'll use something called justify content :space-between; in the nav bar.
