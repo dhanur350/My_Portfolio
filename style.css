@@ -1,3 +1,6 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
 section{
     height:500px;
     background-color: yellow;
@@ -15,12 +18,49 @@ footer{
 }
 nav{
     display: flex;
+    justify-content: space-between;
 }
 ul{
     display: flex;
     list-style-type: none;
+    /*If we want exact space in between content links in unordered list*/
+    width:600px;
+    /*justify-content: space-between;*/
+    /*If we want exact perfect space in between content links in unordered list*/
+    justify-content: space-around;
+    /*By default font size is 40px in all web portfolio, I want to size of font to be little smaller so 30px*/
+    font-size: 30px;
 }
 li{
-    width:200px;
+    /*width:200px;*/
     text-decoration: none;
+}
+h1{
+    font-size: 90px;
+    margin: 0;
+}
+p{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+.dkhero-area{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.dkhero-text{
+    margin-left: 80px;
+}
+.button{
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 10px;
+    margin-top: 20px;
 }
