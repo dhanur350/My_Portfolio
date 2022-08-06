@@ -1,46 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style/css/bootstrap.css">
-    <title>My PortFolio</title>
+    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
+    <title>My_Portfolio</title>
+    <meta charset="UTF-8" />
 </head>
 
 <body>
-    <section class="dkhero">
+    <section class="hero">
         <nav>
-            <img src="src/img/icon.png" class="logo" alt="">
-            <ul>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Contact me</li>
+            <img class="logo" src="src/img/icon.png" alt="Dhanur's logo" />
+            <ul id="nav-list">
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-        <div class="dkhero-area">
-            <div class="dkhero-text">
+        <div class="hero-area">
+            <div class="hero-text">
                 <h1>Dhanur</h1>
-                <p>NodeJS Developer</p>
-                <div class="button">About me</div>
+                <p>Full Stack Developer</p>
+                <div class="button"><a href="#about-me">About me</a></div>
             </div>
-            <div class="socialb">
-                <div class="socialicons"><img src="src/img/github.png" alt="" width="50" height="50"></div>
-                <div class="socialicons"><img src="src/img/linkedinn.png" alt="" width="50" height="50"></div>
-                <div class="socialicons"><img src="src/img/hackerrank.png" alt="" width="50" height="50"></div>
+            <div class="socials">
+                <div>
+                    <a href="https://github.com/dhanur350" class="social"><img src="src/img/github.png" alt=""
+                            width="50" height="50"></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/dhanur-b7a5161a9/" class="social"><img
+                            src="src/img/linkedinn.png" alt="" width="50" height="50"></a>
+                </div>
+                <div>
+                    <a href="https://www.hackerrank.com/dhanur297" class="social">
+                        <img src="src/img/hackerrank.png" alt="" width="50" height="50"></a>
+                </div>
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <section class="sub-section" id="about-me">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>Hello. My name is Dhanur. I am a Software Developer with interest in Web Development and interested
+                NodeJS development.</p>
+        </div>
+        <div class="headshot-container">
+            <img class="headshot" src="src/img/HeadImg.jpg" alt="Dhanur Headshot" />
+        </div>
+    </section>
+    <section class="sub-section-alternative" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img class="project-image" src="src/images/project1.jpg" alt="Project One Image" />
+                <h3>REST API .NET Core EF</h3>
+                <p class="subtext">This is RESTAPI in ASP.NET Core. I enjoyed making this project.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://www.github.com/kubowania">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/project2.jpg" alt="Project One Image" />
+                <h3>Project Two</h3>
+                <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://www.github.com/kubowania">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/project3.png" alt="Project One Image" />
+                <h3>Project Three</h3>
+                <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://www.github.com/kubowania">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/Project4.jpg" alt="Project One Image" />
+                <h3>Project Four</h3>
+                <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://www.github.com/kubowania">View here</a></p>
+            </div>
+        </div>
+    </section>
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <p><a href="mailto:dhanur297@gmail.com">dhanur297@gmail.com</a></p>
+    </footer>
     <script src="src/app.js"></script>
-    <script src="Style/js/bootstrap.js"></script>
 </body>
 
 </html>
