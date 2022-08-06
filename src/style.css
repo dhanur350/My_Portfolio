@@ -1,6 +1,7 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
+    background-size: cover;
 }
 
 section {
@@ -93,4 +94,14 @@ p {
 
 .logo {
     height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    li {
+        font-size: 20px;
+    }
+}
+
+.socialicons {
+    margin: 10px;
 }
