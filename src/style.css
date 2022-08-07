@@ -189,7 +189,7 @@ a {
     }
 
     ul {
-        display: none;
+        display: flex;
         background-color: #2b2c38;
         margin: 0ppx;
     }
