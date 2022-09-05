@@ -82,6 +82,24 @@ p {
     margin-top: 20px;
 }
 
+.button1 {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    outline-style: solid;
+    outline-color: coral;
+    background: transparent;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button1:hover{
+    background-color: #ef744b;
+}
+
 .button:hover {
     background-color: #ef744b;
 }
