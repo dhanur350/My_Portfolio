@@ -74,7 +74,9 @@ p {
     width: 200px;
     height: 55px;
     border-radius: 30px;
-    background-color: coral;
+    outline-style: solid;
+    outline-color: coral;
+    background: transparent;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
