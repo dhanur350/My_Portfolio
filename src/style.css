@@ -15,7 +15,7 @@ section {
 }
 
 footer {
-    background-color: black;
+    background-color: #19335A;
     color: white;
     text-align: center;
     padding: 80px;
@@ -125,12 +125,14 @@ p {
 }
 
 .sub-section {
+    background-color:  #F5DDDA;
     display: flex;
     justify-content: space-around;
     padding: 80px;
 }
 
 .sub-section-alternative {
+    background-color:#D5EAF5  ;
     display: flex;
     flex-direction: column;
     text-align: center;
