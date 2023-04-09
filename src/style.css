@@ -131,8 +131,15 @@ p {
     padding: 80px;
 }
 
+.sub-section-frontend-alternative {
+    background-color: #a85fd3  ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
 .sub-section-alternative {
-    background-color: #D5EAF5  ;
+    background-color: #6fff9a  ;
     display: flex;
     flex-direction: column;
     text-align: center;
