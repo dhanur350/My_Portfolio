@@ -160,7 +160,16 @@ p {
 .project-card {
     width: 300px;
     height: 500px;
-    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    background-color: #F5f5f5;
+    box-shadow: 0 0 10px rgb(81, 147, 233);
+    margin: 10px;
+}
+
+.project-frontend-card {
+    width: 300px;
+    height: 500px;
+    background-color: #F5f5f5;
+    box-shadow: 0 0 10px white;
     margin: 10px;
 }
 
