@@ -142,6 +142,7 @@ p {
 }
 .sub-section-alternative {
     background-color: #1C82AD  ;
+    color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -163,7 +164,8 @@ p {
     width: 300px;
     height: 500px;
     background-color: #F5f5f5;
-    box-shadow: 0 0 10px rgb(81, 147, 233);
+    color: #1c1d25;
+    box-shadow: 0 0 10px white;
     margin: 10px;
 }
 
