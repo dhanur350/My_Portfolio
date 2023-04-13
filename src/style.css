@@ -125,21 +125,23 @@ p {
 }
 
 .sub-section {
-    background-color:  #F5DDDA;
+    background-color:  #576CBC;
+    color: white;
     display: flex;
     justify-content: space-around;
     padding: 80px;
 }
 
 .sub-section-frontend-alternative {
-    background-color: #a85fd3  ;
+    background-color: #19376D  ;
+    color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 80px;
 }
 .sub-section-alternative {
-    background-color: #6fff9a  ;
+    background-color: #1C82AD  ;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -169,6 +171,7 @@ p {
     width: 300px;
     height: 500px;
     background-color: #F5f5f5;
+    color: #1c1d25;
     box-shadow: 0 0 10px white;
     margin: 10px;
 }
@@ -187,8 +190,10 @@ p {
 
 .project-image {
     margin-top: 25px;
-    width: 250px;
-    border-radius: 125px;
+    width: 90%;
+    height: 10rem;
+    border-radius: 2rem;
+    border: 2px solid blue;
 }
 
 hr {
