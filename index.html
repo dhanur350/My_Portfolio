@@ -6,23 +6,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>My_Portfolio</title>
     <meta charset="UTF-8" />
 </head>
 
 <body>
-    <section class="hero">
+    <section class="hero" id="section">
         <nav>
             <img class="logo" src="src/img/icon.png" alt="Dhanur's logo" />
             <ul id="nav-list">
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact-me">Contact</a></li>
+                <li onclick="changeClass()" id="sunicon" class='bx bx-brightness'></li>
             </ul>
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
@@ -61,7 +61,7 @@
             <img class="headshot" src="src/img/HeadImg.jpg" alt="Dhanur Headshot" />
         </div>
     </section>
-    <section class="sub-section-frontend-alternative">
+    <section class="sub-section-frontend-alternative section">
         <h2>Frontend Projects</h2>
         <div class="project-container">
             <div class="project-frontend-card">
@@ -102,7 +102,7 @@
             </div> -->
         </div>
     </section>
-    <section class="sub-section-alternative" id="projects">
+    <section class="sub-section-alternative section" id="projects">
         <h2>Backend Projects</h2>
         <div class="project-container">
             <div class="project-card">
