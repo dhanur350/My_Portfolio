@@ -1,155 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="src/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dhanur is a full stack developer building resilient web and SaaS products." />
+    <title>Dhanur | Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <title>My_Portfolio</title>
-    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
 </head>
 
 <body>
-    <section class="hero" id="section">
-        <nav>
-            <img class="logo" src="src/img/icon.png" alt="Dhanur's logo" />
-            <ul id="nav-list">
-                <li><a href="#about-me">About me</a></li>
+    <header class="hero" id="top">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="brand" href="#top" aria-label="Dhanur, home"><img class="logo" src="src/img/icon.png" alt="" /><span>dhanur<span class="brand-mark">.</span></span></a>
+            <ul class="nav-list">
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact-me">Contact</a></li>
-                <li onclick="changeClass()" id="sunicon" class='bx bx-brightness'></li>
             </ul>
         </nav>
-        <div class="hero-area">
-            <div class="hero-text">
-                <h1>Dhanur</h1>
-                <p>Full Stack Developer</p>
-                <div class="button"><a href="#about-me">About me</a></div>
-                <div class="button"><a download="" href="src/pdf/Dhanur_Resume.pdf">Download CV</a></div>
-            </div>
-            <div class="socials">
-                <div>
-                    <a href="https://github.com/dhanur350" target="_blank" class="social"><img src="src/img/github.png" alt=""
-                            width="100" height="100"></a>
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Based in Himachal Pradesh, India</p>
+                <h1>Building thoughtful<br><span>digital products.</span></h1>
+                <p class="hero-lede">I’m Dhanur, a full stack developer focused on resilient systems, useful products, and the details that make software last.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore my work <i class="bx bx-right-arrow-alt" aria-hidden="true"></i></a>
+                    <a class="button button-outline" href="src/pdf/dhanur_resumefsd.pdf" download>Download CV <i class="bx bx-download" aria-hidden="true"></i></a>
                 </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/dhanur-b7a5161a9/" target="_blank" class="social"><img
-                            src="src/img/linkedinn.png" alt="" width="100" height="100"></a>
-                </div>
-                <div>
-                    <a href="https://www.hackerrank.com/dhanur297" target="_blank" class="social">
-                        <img src="src/img/hackerrank.png" alt="" width="100" height="100"></a>
-                </div>
-                <div>
-                    <a href="https://codesandbox.io/u/dhanur350" class="social">
-                        <img src="src/img/codeSandbox.png" width="100" height="100" /></a>
+                <div class="socials" aria-label="Social profiles">
+                    <a class="social" href="https://github.com/dhanur350" target="_blank" rel="noreferrer" aria-label="GitHub"><img src="src/img/github.png" alt="" /><span>GitHub</span></a>
+                    <a class="social" href="https://www.linkedin.com/in/dhanur-b7a5161a9/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><img src="src/img/linkedinn.png" alt="" /><span>LinkedIn</span></a>
+                    <a class="social" href="https://www.hackerrank.com/dhanur297" target="_blank" rel="noreferrer" aria-label="HackerRank"><img src="src/img/hackerrank.png" alt="" /><span>HackerRank</span></a>
+                    <a class="social" href="https://codesandbox.io/u/dhanur350" target="_blank" rel="noreferrer" aria-label="CodeSandbox"><img src="src/img/codeSandbox.png" alt="" /><span>CodeSandbox</span></a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="sub-section" id="about-me">
-        <div class="information">
-            <h2>About Me</h2>
-            <p>Hello. My name is Dhanur. I am a Software Developer with interest in Web Development and interested in
-                NodeJS development.</p>
-        </div>
-        <div class="headshot-container">
-            <img class="headshot" src="src/img/HeadImg.jpg" alt="Dhanur Headshot" />
-        </div>
-    </section>
-    <section class="sub-section-frontend-alternative section">
-        <h2>Frontend Projects</h2>
-        <div class="project-container">
-            <div class="project-frontend-card">
-                <img class="project-image" src="src/img/BookMyShow.png" alt="Project One Image" />
-                <h3>Book-My-Show Clone</h3>
-                <p class="subtext">This is Book-My-Show Clone made only Frontend and soon will work on it's Backend,
-                    Used ReactJS. It's deployed and you can see in the given link below.</p>
-                <hr />
-                <p class="subtext"><a class="project-link" target="_blank"
-                        href="https://book-my-show-1nz7khxu9-dhanur350.vercel.app/">View Deployed App</a></p>
-            </div>
-            <div class="project-frontend-card">
-                <img class="project-image" src="src/img/zomatoimage.png" alt="Project One Image" />
-                <h3>Zomato Clone</h3>
-                <p class="subtext">This is Zomato-Website Clone made only Frontend and soon will work on it's Backend in
-                    NodeJS connected with it's database with MongoDB, Used ReactJS. it's deployed link is gieven below..
-                </p>
-                <hr />
-                <p class="subtext">
-                    <a class="project-link" href="https://zomato-clone-oi7d.vercel.app/delivery" target="_blank">View Deployed link</a>
-                </p>
-            </div>
-            <div class="project-frontend-card">
-                <img class="project-image" src="src/img/gpt3.png" alt="Project One Image" />
-                <h3>GPT3-Clone</h3>
-                <p class="subtext">This is GPT3-Clone UI-UX Design, with no functionality and all made in React.JS only. It's deployed in Netlify</p>
-                <hr />
-                <p class="subtext"><a class="project-link" href="https://gpt3-clone1.netlify.app/" target="_blank">View Deployment</a></p>
-            </div>
-            <!-- 
-            
-            <div class="project-card">
-                <img class="project-image" src="" alt="Project One Image" />
-                <h3>REST API .NET Core EF</h3>
-                <p class="subtext">This is RESTAPI in ASP.NET Core. I enjoyed making this project.</p>
-                <hr />
-                <p class="subtext"><a class="project-link" href="https://www.github.com/dhanur350">Private Repo</a></p>
-            </div> -->
-        </div>
-    </section>
-    <section class="sub-section-alternative section" id="projects">
-        <h2>Backend Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <img class="project-image" src="src/img/RESTAPIJS.png" alt="Project One Image" />
-                <h3>RESTAPI Simple NodeJS</h3>
-                <p class="subtext">This is RESTAPI without using any framework, I only used simple NodeJS. I enjoyed
-                    making this project.</p>
-                <hr />
-                <p class="subtext"><a class="project-link" target="_blank"
-                        href="https://www.github.com/dhanur350">Private Repo</a></p>
-            </div>
-            <div class="project-card">
-                <img class="project-image" src="src/img/NodeMailer.png" alt="Project One Image" />
-                <h3>MailerNode NodeJS</h3>
-                <p class="subtext">This is Custom API which sends emails automatically to recipients using NodeJS. I
-                    enjoyed making this project.</p>
-                <hr />
-                <p class="subtext"><a class="project-link" target="_blank"
-                        href="https://www.github.com/dhanur350">Private Repo</a>
-                </p>
-            </div>
-            <div class="project-card">
-                <img class="project-image" src="src/img/NPX.png" alt="Project One Image" />
-                <h3>NPX-Card NodeJS</h3>
-                <p class="subtext">This is NPX Card, My intorduction via NPM Package published in npmjs.com via NodeJS,
-                    Requires nodejs installed in computer. <strong>Just type npx dhanur350-intro</strong>. I enjoyed
-                    making this project.</p>
-                <hr />
-                <p class="subtext"><a class="project-link" target="_blank"
-                        href="https://www.npmjs.com/package/dhanur350-intro">NPM Link
-                        to see all details</a></p>
-            </div>
-            <div class="project-card">
-                <img class="project-image" src="src/img/RESTAPI.png" alt="Project One Image" />
-                <h3>REST API .NET Core EF</h3>
-                <p class="subtext">This is RESTAPI in ASP.NET Core. I enjoyed making this project.</p>
-                <hr />
-                <p class="subtext"><a class="project-link" target="_blank"
-                        href="https://www.github.com/dhanur350">Private Repo</a></p>
+            <div class="hero-aside" aria-label="Professional focus">
+                <span class="aside-index">01 / 04</span>
+                <p class="aside-label">FULL STACK ENGINEER</p>
+                <p class="aside-stack">Node.js <span>·</span> Python <span>·</span> React <span>·</span> AWS</p>
+                <a class="aside-link" href="#about-me">Get to know me <i class="bx bx-down-arrow-alt" aria-hidden="true"></i></a>
             </div>
         </div>
-    </section>
+        <div class="hero-foot"><span>Independent thinking. Reliable engineering.</span><span>01 — 04</span></div>
+    </header>
+
+    <main>
+        <section class="about section-pad" id="about-me">
+            <div class="section-heading">
+                <p class="eyebrow">A little about me</p>
+                <h2>Good software is<br><span>built to keep working.</span></h2>
+            </div>
+            <div class="about-content">
+                <img class="headshot" src="src/img/HeadImg.jpg" alt="Portrait of Dhanur" />
+                <div class="about-copy">
+                    <p class="about-lede">Full Stack Engineer with 7+ years of experience building and maintaining complex, business-critical systems across web and SaaS platforms.</p>
+                    <p>My work spans scalable backend architecture, layered business logic, and component-driven frontends. I care about system ownership, long-term maintainability, and helping teams ship confidently through testing, observability, and thoughtful delivery practices.</p>
+                    <p>I’ve worked with global teams across SaaS, fintech, and e-commerce. I’m also the web developer who has always been especially interested in Node.js development.</p>
+                    <div class="contact-details">
+                        <a href="mailto:dhanur297@gmail.com"><i class="bx bx-envelope" aria-hidden="true"></i> dhanur297@gmail.com</a>
+                        <a href="tel:+917018216644"><i class="bx bx-phone" aria-hidden="true"></i> +91 7018921644</a>
+                        <span><i class="bx bx-map" aria-hidden="true"></i> Himachal Pradesh, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-block">
+                <div class="skills-heading"><p class="eyebrow">Tools of the trade</p><h3>Core competencies</h3></div>
+                <div class="skills-list" aria-label="Technical skills">
+                    <span>JavaScript ES6+</span><span>TypeScript</span><span>Java</span><span>Spring Boot</span><span>Python</span><span>React</span><span>AngularJS</span><span>React Native</span><span>Next.js</span><span>Node.js</span><span>NestJS</span><span>Express.js</span><span>REST APIs</span><span>System Design</span><span>Microservices</span><span>PostgreSQL</span><span>MongoDB</span><span>AWS</span><span>Docker</span><span>CI/CD</span><span>Jenkins</span><span>GitHub Actions</span><span>Jest</span><span>Clean Code</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section-pad" id="experience">
+            <div class="section-heading section-heading-row">
+                <div><p class="eyebrow">Where I’ve made an impact</p><h2>Experience</h2></div>
+                <p class="section-note">Building business-critical products with teams around the world.</p>
+            </div>
+            <div class="experience-list">
+                <article class="experience-item">
+                    <p class="experience-date">Jan 2025 — Present</p>
+                    <div class="experience-description"><h3>Full Stack Developer <span>· Contractual</span></h3><p class="company">DevPeak Innovations <span> / Remote, India</span></p><ul><li>Maintain scalable SaaS systems with complex, layered business logic for international clients.</li><li>Implement CI/CD pipelines and AWS deployments for stable, predictable releases.</li><li>Introduce unit testing practices and improve observability to increase code quality.</li></ul></div>
+                </article>
+                <article class="experience-item">
+                    <p class="experience-date">Jan 2023 — Dec 2025</p>
+                    <div class="experience-description"><h3>Full Stack Developer</h3><p class="company">DevPeak Innovations <span> / Hybrid, India</span></p><ul><li>Designed and maintained scalable SaaS systems with layered business logic for international clients.</li><li>Developed reliable, maintainable backend services using Node.js and Python.</li><li>Built reusable, component-driven UI architecture using React and AngularJS.</li><li>Implemented AWS deployments, CI/CD pipelines, unit testing, and observability improvements.</li></ul></div>
+                </article>
+                <article class="experience-item">
+                    <p class="experience-date">Jan 2019 — Dec 2022</p>
+                    <div class="experience-description"><h3>Full Stack Developer <span>· Contractual Projects</span></h3><p class="company">US &amp; Germany clients <span> / Remote, India · NDA</span></p><ul><li>Delivered full-stack SaaS, fintech, and e-commerce systems with end-to-end ownership.</li><li>Designed scalable backend architectures and APIs with a focus on fault tolerance and clean code.</li><li>Built production-ready React and AngularJS applications for long-term maintainability.</li></ul></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="featured-projects section-pad" id="projects">
+            <div class="section-heading section-heading-row">
+                <div><p class="eyebrow">Selected product work</p><h2>Built for real-world use.</h2></div>
+                <p class="section-note">SaaS tools, platforms, and products for teams and communities.</p>
+            </div>
+            <div class="resume-projects">
+                <article class="resume-project"><span class="project-number">01</span><div class="resume-project-main"><h3>CMS Tool Cloud App</h3><p class="project-role">Full Stack Developer</p><p>Designed a multi-tenant appointment SaaS for healthcare, legal, and salon businesses. Built Node.js microservices and secure APIs, developed React and AngularJS modules, and maintained 80%+ unit test coverage.</p><div class="project-tags"><span>.NET Core</span><span>Python</span><span>Node.js</span><span>React</span><span>Azure</span><span>CI/CD</span></div></div></article>
+                <article class="resume-project"><span class="project-number">02</span><div class="resume-project-main"><h3>Prolegion <span class="client-label">US Client</span></h3><p class="project-role">Full Stack Developer</p><p>Built a workforce platform connecting vendors, clients, and IT resources. Developed dynamic React and AngularJS components and maintained 85%+ unit test coverage.</p><div class="project-tags"><span>Spring Boot</span><span>Node.js</span><span>AWS</span><span>Next.js</span><span>Python</span><span>Microservices</span></div></div></article>
+                <article class="resume-project"><span class="project-number">03</span><div class="resume-project-main"><h3>FIPA <span class="client-label">BCG Client</span></h3><p class="project-role">Software Developer</p><p>Contributed secure backend services, Node.js APIs, and improved publishing workflows for a marketing SaaS product.</p><div class="project-tags"><span>Spring Boot</span><span>Node.js</span><span>AWS</span><span>React</span><span>React Native</span></div></div></article>
+                <article class="resume-project"><span class="project-number">04</span><div class="resume-project-main"><h3>AutoDevKit</h3><p class="project-role">Full Stack Developer</p><p>Developed a visual portfolio code-generator SaaS that produces production-ready Next.js websites, with scalable Node.js services and dynamic UI modules.</p><div class="project-tags"><span>Next.js</span><span>Node.js</span><span>Vue.js</span><span>NestJS</span><span>Google Cloud</span></div></div></article>
+                <article class="resume-project"><span class="project-number">05</span><div class="resume-project-main"><h3>PAAF <span class="client-label">BCG</span></h3><p class="project-role">Full Stack Developer</p><p>Developed a multi-tenant company management system for client onboarding, bookings, and transactions, including secure role-based access.</p><div class="project-tags"><span>React</span><span>Angular</span><span>AngularJS</span><span>Node.js</span><span>MongoDB</span><span>JWT</span></div></div></article>
+                <article class="resume-project"><span class="project-number">06</span><div class="resume-project-main"><h3>Eventura</h3><p class="project-role">Full Stack Developer</p><p>Created a nationwide wedding and event services booking platform with real-time dashboards, scalable APIs, and an integrated payment gateway.</p><div class="project-tags"><span>React</span><span>Node.js</span><span>Spring Boot</span><span>NestJS</span><span>MongoDB</span></div></div></article>
+            </div>
+        </section>
+
+        <section class="legacy-projects section-pad" aria-labelledby="frontend-projects-title">
+            <div class="section-heading"><p class="eyebrow">From my original portfolio</p><h2 id="frontend-projects-title">More projects</h2><p class="section-note">A few earlier builds and experiments, kept here alongside my recent work.</p></div>
+            <h3 class="project-category">Frontend projects</h3>
+            <div class="project-container">
+                <article class="project-card"><img class="project-image" src="src/img/BookMyShow.png" alt="BookMyShow clone preview" /><div class="project-card-copy"><h3>Book-My-Show Clone</h3><p>This React frontend clone is deployed and available to explore.</p><a class="project-link" target="_blank" rel="noreferrer" href="https://book-my-show-1nz7khxu9-dhanur350.vercel.app/">View deployed app <i class="bx bx-up-right-arrow-alt" aria-hidden="true"></i></a></div></article>
+                <article class="project-card"><img class="project-image" src="src/img/zomatoimage.png" alt="Zomato clone preview" /><div class="project-card-copy"><h3>Zomato Clone</h3><p>A React frontend clone, with plans for a Node.js and MongoDB backend.</p><a class="project-link" target="_blank" rel="noreferrer" href="https://zomato-clone-oi7d.vercel.app/delivery">View deployed app <i class="bx bx-up-right-arrow-alt" aria-hidden="true"></i></a></div></article>
+                <article class="project-card"><img class="project-image" src="src/img/gpt3.png" alt="GPT-3 clone preview" /><div class="project-card-copy"><h3>GPT-3 Clone</h3><p>A React UI/UX concept with no backend functionality.</p><a class="project-link" target="_blank" rel="noreferrer" href="https://gpt3-clone1.netlify.app/">View deployment <i class="bx bx-up-right-arrow-alt" aria-hidden="true"></i></a></div></article>
+            </div>
+            <h3 class="project-category">Backend projects</h3>
+            <div class="project-container">
+                <article class="project-card"><img class="project-image" src="src/img/RESTAPIJS.png" alt="Simple Node.js REST API preview" /><div class="project-card-copy"><h3>REST API · Node.js</h3><p>A REST API built with plain Node.js, without a framework.</p><a class="project-link" target="_blank" rel="noreferrer" href="https://www.github.com/dhanur350">GitHub profile <i class="bx bx-up-right-arrow-alt" aria-hidden="true"></i></a></div></article>
+                <article class="project-card"><img class="project-image" src="src/img/NodeMailer.png" alt="NodeMailer project preview" /><div class="project-card-copy"><h3>MailerNode</h3><p>A custom Node.js API that automatically sends email to recipients.</p><a class="project-link" target="_blank" rel="noreferrer" href="https://www.github.com/dhanur350">GitHub profile <i class="bx bx-up-right-arrow-alt" aria-hidden="true"></i></a></div></article>
+                <article class="project-card"><img class="project-image" src="src/img/NPX.png" alt="NPX introduction card preview" /><div class="project-card-copy"><h3>NPX-Card</h3><p>An npm package that introduces me in the terminal. Try <code>npx dhanur350-intro</code>.</p><a class="project-link" target="_blank" rel="noreferrer" href="https://www.npmjs.com/package/dhanur350-intro">View npm package <i class="bx bx-up-right-arrow-alt" aria-hidden="true"></i></a></div></article>
+                <article class="project-card"><img class="project-image" src="src/img/RESTAPI.png" alt="ASP.NET Core REST API preview" /><div class="project-card-copy"><h3>REST API · .NET Core EF</h3><p>A REST API built with ASP.NET Core and Entity Framework.</p><a class="project-link" target="_blank" rel="noreferrer" href="https://www.github.com/dhanur350">GitHub profile <i class="bx bx-up-right-arrow-alt" aria-hidden="true"></i></a></div></article>
+            </div>
+        </section>
+
+        <section class="education section-pad" aria-label="Education and certifications">
+            <div class="education-column"><p class="eyebrow">Academic background</p><h2>Education</h2><article class="education-item"><h3>Master of Computer Applications</h3><p>Panjab University, Hoshiarpur, India</p><span>2020 — 2023</span></article><article class="education-item"><h3>Bachelor of Computer Applications</h3><p>H.P. University, Dharamshala, India</p><span>2017 — 2020</span></article></div>
+            <div class="education-column"><p class="eyebrow">Always learning</p><h2>Certifications</h2><article class="education-item"><h3>Java Microservices with Spring Boot</h3><p>Google Cloud</p><span>2023</span></article><article class="education-item"><h3>Frontend Web Development</h3><p>Johns Hopkins University</p><span>2022</span></article><article class="education-item"><h3>Full Stack Web Development Training</h3><p>DevTown</p><span>2023</span></article></div>
+        </section>
+    </main>
+
     <footer id="contact-me">
-        <h2>Contact me</h2>
-        <p><a href="mailto:dhanur297@gmail.com">dhanur297@gmail.com</a></p>
+        <div class="footer-inner"><div><p class="eyebrow">Have a good one in mind?</p><h2>Let’s build<br><span>something lasting.</span></h2></div><div class="footer-contact"><a class="footer-email" href="mailto:dhanur297@gmail.com">dhanur297@gmail.com <i class="bx bx-up-right-arrow-alt" aria-hidden="true"></i></a><a href="tel:+917018216644">+91 7018921644</a><p>Himachal Pradesh, India</p></div></div>
+        <div class="footer-bottom"><a href="#top">Dhanur<span class="brand-mark">.</span></a><span>Full Stack Developer</span><span>© 2026</span></div>
     </footer>
-    <script src="src/app.js"></script>
 </body>
 
 </html>
